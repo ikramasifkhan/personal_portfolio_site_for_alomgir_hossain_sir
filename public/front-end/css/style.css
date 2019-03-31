@@ -1,0 +1,599 @@
+/*In the name of Allah, The benificent the Merciful*/
+/*base color #fd4d4d
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+*{
+    margin: 0p;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0px;
+    margin: 0px;
+}
+.table td, .table th{
+    border: 0px;
+}
+.clear_both{
+    clear: both;
+}
+.page_number{
+    font-size: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-bottom: 5px dotted;
+    color: #090424;
+    color: #cfd8dc;
+    text-align: center;
+    font-style: italic;
+}
+.page_title{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #090424;
+    text-align: left;
+}
+.page_subtitle{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #090424;
+    text-align: left;
+    padding-bottom: 30px;
+}
+.section_title{
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #090424;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.my_button{
+    background: #fd4d4d;
+    box-shadow: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.my_card,
+.my_card .card-header,
+.my_card .card-title,
+.my_card .card-footer,
+.my_card .card-body
+{
+    background-color: transparent;
+    border: 0px;
+    padding: 0;
+}
+/*==========================common class css end here====================*/
+
+/*=====================navigation bar start here======================*/
+.sidenav .closebtn  {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav  .closebtn:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .open_nav{
+    color: #090424;
+    position: fixed;
+    right: 30px;
+    top: 30px
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #090424;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 1px 0px 1px 1px #888888;
+    transition: 1s;
+}
+
+.sidenav .nav_brand {
+    margin-top: 30px; 
+    margin-left: 50%;
+    transform: translateX(-50%)
+}
+
+.sidenav .nav_brand a{
+    padding-left: 8px;
+    color: #fd4d4d;
+    font-size: 45px;
+    font-family: 'Great Vibes', cursive;
+    text-decoration: none;
+}
+.main_menu ul li:first-child{
+    padding-top: 0px;
+        
+}
+.sidenav .menu_bar a {
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.sidenav .menu_bar{
+    margin-top: 40%;
+    margin-bottom: 40%;
+}
+.sidenav .menu_bar a:hover {
+    color: #fd4d4d;
+
+}
+.sidenav .menu_bar  .active{
+    color: #fd4d4d;
+}
+.sidenav .social_icon{
+   padding-left: 30px;
+}
+.sidenav .social_icon ul li{
+    float: left;
+    padding-left: 10px;
+}
+.sidenav .social_icon ul li a i{
+     color: #fd4d4d;
+     font-size: 20px;
+}
+/*=====================navigation bar ends here======================*/
+
+/*====================home page start here====================*/
+.main .main_content{
+    
+    background-image: url(../images/footer_image.png);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.main .main_content .main_content_overlay{
+    background: rgba(255, 255, 255, .90);
+    width: 100%;
+    height: 100%;
+}
+/*=============my_introduction css part start here=========*/
+.my_introduction{
+    
+    padding: 30px 0;
+}
+.about_me_introduction{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-weight: 400;
+    color: #090424;
+    padding-bottom: 30px;
+}
+/*=============my_introduction css part end here=========*/
+
+/*===========my_services css part start here============*/
+.my_services{
+    padding: 30px 0;
+}
+
+.recent_work .my_card,
+.my_services .my_card{
+    box-shadow: 2px 2px 2px 2px #888888;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+.my_services .my_card span
+.my_services .my_card span{
+    font-size: 120px;
+    color: #090424;
+}
+.recent_work .my_card .card-body .card-title,
+.my_services .my_card .card-body .card-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: #090424;
+    text-align: left;
+}
+.recent_work .my_card .card-body .card-text,
+.my_services .my_card .card-body .card-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-bottom: 15px;
+    text-align: left;
+    color: #090424;
+}
+.recent_work .my_card .card-footer,
+.my_services .my_card .card-footer{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.recent_work .my_card .card-footer a,
+.my_services .my_card .card-footer a{
+    color:#fff;
+}
+
+.my_services .my_service_content:nth-child(3n+0){
+    padding-left: 0px;
+}
+
+.my_services .my_service_content:nth-child(3n+2){
+    padding-right: 0px;
+}
+/*===========my_services css part end here============*/
+
+/*============footer section css start here===========*/
+.footer{
+    background: rgba(9, 4, 36, .95);
+    padding-top: 30px;
+}
+.footer .footer_brand a{
+    color: #fd4d4d;
+    font-size: 45px;
+    font-family: 'Great Vibes', cursive;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 0px;
+}
+.footer_heading{
+    text-align: left;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fd4d4d;
+    padding-bottom: 15px;
+    padding-left: 0px;
+}
+.copyright_section{
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+/*============footer section css end here===========*/
+
+/*====================home page end here====================*/
+
+/*===========================about us page start here===============================*/
+.about_me{
+    
+}
+
+.about_me .page_title{
+    font-style: italic;
+    padding-bottom: 30px;
+}
+.about_me .personal_infomation{
+    margin: 30px 0;
+}
+.about_me .about_me_content h3,
+.about_me .personal_infomation h3{
+    font-size: 20px;
+    font-weight: 900;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+.about_me .about_me_content ul li,
+.about_me .about_me_content p,
+.about_me .personal_infomation p{
+    font-weight: 400;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about_me .about_me_content ul li strong,
+.about_me .personal_infomation p strong{
+    font-weight: 700;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.about_me .about_me_content .about_me_services,
+.about_me .about_me_content .tecnical_skill{
+    margin-top: 30px;
+}
+.about_me .about_me_content .progress{
+    margin: 10px 0;
+}
+
+.about_me .about_me_content .my_progress_bar{
+    background: #fd4d4d;
+}
+.about_me .about_me_content ul li{
+    padding: 5px 0;
+}
+/*===========================about us page end here===============================*/
+
+/*===========================resume page start here==================================*/
+.resume{
+    
+}
+.resume .page_title{
+    font-style: italic;
+    padding-bottom: 20px;
+}
+.resume .resume_education{
+    padding-bottom: 15px;
+}
+.resume .resume_heading{
+    font-size: 20px;
+    font-weight: 900;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+} 
+
+.resume .resume_content{
+    padding-bottom: 10px;
+}
+.resume .resume_content b{
+    font-weight: 700;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.resume .resume_content p{
+    font-weight: 400;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.resume .resume_content .resume_year{
+    background: #090424;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    margin-left: 25px;
+}
+.resume .resume_content:before{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fd4d4d;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: " "
+}
+.resume  .resume_experience{
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.resume_row div:nth-child(odd){
+    padding-left: 0;
+}
+.resume_row div:nth-child(even){
+    padding-left : 0;
+    padding-right: 0;
+}
+/*===========================resume page end here==================================*/
+
+
+/*=================================our recent work start here============================*/
+.recent_work{
+  
+}
+
+.recent_work .page_title{
+    font-style: italic;
+}
+
+.recent_work .isotope_button_group{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.recent_work .my_button{
+    background: transparent;
+    border-color: transparent;
+    color: #090424;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.recent_work .my_button.active{
+     background: #fd4d4d;
+    border: 0px;
+    color: #ffffff;
+    transition: .5s;
+}
+.recent_work .my_button:hover{
+    background: #fd4d4d;
+    border: 0px;
+    color: #ffffff;
+    transition: .5s;
+}
+
+.btn-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.recent_work .my_card .card-footer .my_button{
+    background: #fd4d4d;
+    box-shadow: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700
+}
+.recent_work .my_card .card-footer .my_button:hover{
+    background: #C9302C
+}
+.element-item{
+    padding-bottom: 30px;
+}
+
+.element-item:nth-child(3n+1){
+    padding-left: 0;
+}
+
+.element-item:nth-child(3n+3){
+    padding-right: 0;
+}
+/*=================================our recent work end here============================*/
+
+/*=============================contact details page start here========================*/
+.contact_details{
+    background-image: url(../images/footer_image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.contact_details .overlay{
+    width: 100%;
+    height: 100%;
+     background: rgba(255, 255, 255, .90);
+}
+.contact_details .page_title{
+    font-style: italic;
+}
+.contact_details .contact_content{}
+.contact_details .main_contact_content{
+    padding-bottom: 30px;
+}
+.location h3,
+.contact_details .main_contact_content .contact_content h3{
+    font-size: 20px;
+    font-weight: 900;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+.contact_details .main_contact_content .contact_content p {
+    font-weight: 400;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+   padding-left: 25px;
+}
+
+.contact_details .main_contact_content .contact_content p:before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fd4d4d;
+}
+.contact_details .main_contact_content .contact_content p strong{
+    font-weight: 700;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.contact_details .main_contact_content .contact_form .form-group{
+    box-shadow: 0px 2px  3px rgba(0,0,0,.5);
+    box-shadow: 0px 1px 1px  #888888;
+}
+.location{
+    padding-bottom: 30px;
+}
+.location .google_map iframe{
+    width: 100%;
+}
+/*=============================contact details page end here========================*/
+
+/*=============================course_page start here=================================*/
+.course_page{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.course_page .course_page_content{
+    margin-top:  5px;
+    margin-bottom: 5px;
+}
+.course_page .course_page_content .course_page_content_title{
+    color: #090424;
+    font-weight: 700;
+   font-family: 'Open Sans', sans-serif;
+}
+.course_page .course_page_content .course_page_content_text{
+    font-weight: 400;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+}
+.course_page .course_page_content .course_page_content_title.mark_title{
+    padding-top: 12px;
+}
+.course_page .course_page_btn{
+    margin-top: 30px;
+}
+/*=============================course_page start here=================================*/
+
+/*=====================course schedule page starts here===============================*/
+.course_schedule{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.course_schedule .table td,
+.course_schedule .table th{
+    border: 1px solid rgba(9, 4, 36, .3);
+}
+.course_schedule tr th{
+    color: #090424;
+    font-weight: 700;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.course_schedule tr td{
+    font-weight: 400;
+    color: #090424;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+/*=====================course schedule page ends  here===============================*/
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/

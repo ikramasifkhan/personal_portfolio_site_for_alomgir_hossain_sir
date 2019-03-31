@@ -79,7 +79,4 @@ course schedule
     </section>
 </section>
 
-<script>
-document.forms['course_schedule_form'].elements['course_id'].value="{{$course->id}}";
-</script>
 @endsection

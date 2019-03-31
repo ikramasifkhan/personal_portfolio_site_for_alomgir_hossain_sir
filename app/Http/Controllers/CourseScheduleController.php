@@ -10,7 +10,7 @@ use DB;
 class CourseScheduleController extends Controller {
 
     public function index() {
-        $courses = Course::all();
+        $courses = Course::where('publication_status',1)->get();
         return view('admin.CourseSchedule.AddCourseSchedule', [
             'courses' => $courses
         ]);

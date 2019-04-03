@@ -299,6 +299,17 @@
                         <li><a href="{{route('manage-education')}}">Manage educational background</a></li>
                     </ul>
                 </li>
+                
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-book"></i>
+                        <span>Workng  experience</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="{{route('add-experience')}}">Add experince</a></li>
+                        <li><a href="{{route('manage-experience')}}">Manage experience</a></li>
+                    </ul>
+                </li>
             </ul>            
         </div>
         <!-- sidebar menu end-->

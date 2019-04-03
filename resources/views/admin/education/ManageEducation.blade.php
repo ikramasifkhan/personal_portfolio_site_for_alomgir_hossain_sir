@@ -19,7 +19,7 @@ service
                             <th>Name of the institute</th>
                             <th>Year</th>
                             <th>Short description</th>
-                            <th>Short publication status</th>
+                            <th> Publication status</th>
                             <th>Action</th>
                         </thead>
                         @foreach($educations as $education)

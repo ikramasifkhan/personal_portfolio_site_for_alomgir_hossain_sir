@@ -284,3 +284,43 @@ Route::get('/education/delete/{id}',[
     'uses'=>'EducationController@DeleteEducationalInfo',
     'as'=>'delete-education-info'
 ]);
+
+Route::get('/experience/add',[
+    'uses'=>'ExperienceController@index',
+    'as'=>'add-experience'
+]);
+
+Route::post('/experience/save',[
+    'uses'=>'ExperienceController@SaveExperienceInfo',
+    'as'=>'save-experience'
+]);
+
+Route::get('/experience/manage',[
+    'uses'=>'ExperienceController@ManageExperience',
+    'as'=>'manage-experience'
+]);
+
+Route::get('/experience/unpublish/{id}',[
+    'uses'=>'ExperienceController@UnpublishExperienceInfo',
+    'as'=>'unpublish-experience-info'
+]);
+
+Route::get('/experience/publish/{id}',[
+    'uses'=>'ExperienceController@PublishExperienceInfo',
+    'as'=>'publish-experience-info'
+]);
+
+Route::get('/experience/edit/{id}',[
+    'uses'=>'ExperienceController@EditExperienceInfo',
+    'as'=>'edit-experience-info'
+]);
+
+Route::post('/experience/update',[
+    'uses'=>'ExperienceController@UpdateExperienceInfo',
+    'as'=>'update-experience-info'
+]);
+
+Route::get('/experience/delete/{id}',[
+    'uses'=>'ExperienceController@DeleteExperienceInfo',
+    'as'=>'delete-experience-info'
+]);

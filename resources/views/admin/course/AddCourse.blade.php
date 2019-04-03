@@ -62,14 +62,14 @@ Course
                                     </div>
                                     
                                      <div class="form-group">
-                                        <label for="long_description">Course short description</label>
+                                        <label for="short_description">Course short description</label>
                                         <textarea id="short_description" name="short_description" class="form-control" placeholder="Short description" required></textarea>
                                         <span><b class="text-danger">{{$errors->has('short_description')?$errors->first('short_description'): ''}}</b></span>
                                     </div>
                                     
                                     <div class="form-group">
                                         <label for="long_description">Course long description</label>
-                                        <textarea id="short_description" name="long_description" class="form-control" placeholder="Long description" required></textarea>
+                                        <textarea id="editor" name="long_description" class="form-control" placeholder="Long description" required></textarea>
                                         <span><b class="text-danger">{{$errors->has('long_description')?$errors->first('long_description'): ''}}</b></span>
                                     </div>
                                     

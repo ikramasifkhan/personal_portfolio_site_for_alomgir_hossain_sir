@@ -139,3 +139,148 @@ Route::get('/course/schedule/manage',[
     'uses'=>'CourseScheduleController@ManageCourseScheduleInfo',
     'as'=>'manage-course-schedule-info'
 ]);
+
+Route::get('/course/schedule/unpublish/{id}',[
+    'uses'=>'CourseScheduleController@UnpublishCourseScheduleInfo',
+    'as'=>'unpublish_schedule_info'
+]);
+
+Route::get('/course/schedule/publish/{id}',[
+    'uses'=>'CourseScheduleController@PublishCourseScheduleInfo',
+    'as'=>'publish_schedule_info'
+]);
+
+Route::get('/course/schedule/edit/{id}',[
+    'uses'=>'CourseScheduleController@EditCourseScheduleInfo',
+    'as'=>'edit_schedule_info'
+]);
+
+Route::post('/course/schedule/update/',[
+    'uses'=>'CourseScheduleController@UpdateCourseScheduleInfo',
+    'as'=>'upadate-course-schedule'
+]);
+
+Route::get('/course/schedule/delete/{id}',[
+    'uses'=>'CourseScheduleController@DeleteCourseScheduleInfo',
+    'as'=>'delete_schedule_info'
+]);
+
+Route::get('/service/add',[
+    'uses'=>'SeriviceController@index',
+    'as'=>'add-service'
+]);
+
+Route::post('/service/save',[
+    'uses'=>'SeriviceController@SaveService',
+    'as'=>'save-service-info'
+]);
+
+Route::get('/service/manage',[
+    'uses'=>'SeriviceController@ShowService',
+    'as'=>'manage-service'
+]);
+
+Route::get('/service/unpublish/{id}',[
+    'uses'=>'SeriviceController@UnpublishServiceInfo',
+    'as'=>'unpublish-service-info'
+]);
+
+Route::get('/service/publish/{id}',[
+    'uses'=>'SeriviceController@PublishServiceInfo',
+    'as'=>'publish-service-info'
+]);
+
+Route::get('/service/edit/{id}',[
+    'uses'=>'SeriviceController@EditServiceInfo',
+    'as'=>'edit-service-info'
+]);
+
+Route::post('/service/update/',[
+    'uses'=>'SeriviceController@UpdateServiceInfo',
+    'as'=>'update-service-info'
+]);
+
+Route::get('/service/update/{id}',[
+    'uses'=>'SeriviceController@DeleteServiceInfo',
+    'as'=>'delete-service-info'
+]);
+
+Route::get('/skill/add',[
+    'uses'=>'SkillController@index',
+    'as'=>'add-skill'
+]);
+
+Route::post('/skill/save',[
+    'uses'=>'SkillController@SaveSkillInfo',
+    'as'=>'save-skill-info'
+]);
+
+Route::get('/skill/manage',[
+    'uses'=>'SkillController@ManageSkillInfo',
+    'as'=>'manage-skill'
+]);
+
+Route::get('/skill/unpublish/{id}',[
+    'uses'=>'SkillController@UnpublishSkillInfo',
+    'as'=>'unpublish-skill'
+]);
+
+Route::get('/skill/publish/{id}',[
+    'uses'=>'SkillController@PublishSkillInfo',
+    'as'=>'publish-skill'
+]);
+
+Route::get('/skill/edit/{id}',[
+    'uses'=>'SkillController@EditSkillInfo',
+    'as'=>'edit-skill'
+]);
+
+Route::post('/skill/update',[
+    'uses'=>'SkillController@UpdateSkillInfo',
+    'as'=>'update-skill-info'
+]);
+
+Route::get('/skill/delete/{id}',[
+    'uses'=>'SkillController@DeleteSkillInfo',
+    'as'=>'delete-skill'
+]);
+
+Route::get('/education/add/',[
+    'uses'=>'EducationController@index',
+    'as'=>'add-education'
+]);
+
+Route::post('/education/save/',[
+    'uses'=>'EducationController@SaveEducationalInfo',
+    'as'=>'save-info'
+]);
+
+Route::get('/education/manage/',[
+    'uses'=>'EducationController@ManageEducationalInfo',
+    'as'=>'manage-education'
+]);
+
+Route::get('/education/unpublish/{id}',[
+    'uses'=>'EducationController@UnpublishEducationalInfo',
+    'as'=>'unpublish-education-info'
+]);
+
+Route::get('/education/publish/{id}',[
+    'uses'=>'EducationController@PublishEducationalInfo',
+    'as'=>'publish-education-info'
+]);
+
+Route::get('/education/edit/{id}',[
+    'uses'=>'EducationController@EditEducationalInfo',
+    'as'=>'edit-education-info'
+]);
+
+Route::post('/education/update',[
+    'uses'=>'EducationController@UpdateEducationalInfo',
+    'as'=>'update-info'
+]);
+
+Route::get('/education/delete/{id}',[
+    'uses'=>'EducationController@DeleteEducationalInfo',
+    'as'=>'delete-education-info'
+]);

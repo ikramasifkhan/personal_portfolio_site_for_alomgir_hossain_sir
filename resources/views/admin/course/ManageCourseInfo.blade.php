@@ -29,7 +29,7 @@ coursed
                             <td>{{$course->name}}</td>
                             <td>{{$course->course_objective}}</td>
                             <td>{{$course->short_description}}</td>
-                            <td>{{$course->long_description}}</td>
+                            <td>{!! $course->long_description !!}</td>
                             <td>
                                 @if($course->publication_status==1)
                                  Published
@@ -44,7 +44,7 @@ coursed
                                 @else
                                 <a title="Publish it" class="btn btn-danger btn-xs" href="{{route('publish-course-info',['id'=>$course->id])}}"><span class="fa fa-arrow-down"></span></a>
                                 @endif
-                                <a title="Edit it" class="btn btn-warning btn-xs" href="{{route('edit-course-info',['id'=>$course->id])}}"><span class="fa fa-edit"></span></a>
+                                <a title="Edit it" class="btn btn-info btn-xs" href="{{route('edit-course-info',['id'=>$course->id])}}"><span class="fa fa-edit"></span></a>
                                 
                                 <a title="Delete it" class="btn btn-danger btn-xs" href="{{route('delete-course-info',['id'=>$course->id])}}"><span class="fa fa-trash"></span></a>
                             </td>

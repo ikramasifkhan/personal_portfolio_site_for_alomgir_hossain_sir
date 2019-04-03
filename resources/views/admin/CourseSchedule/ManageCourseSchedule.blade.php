@@ -35,7 +35,15 @@ about me
                                 <a class="btn btn-info btn-xs" href="{{url('course/schedule/manage')}}" download="{{$courseSchedule->lecture_file}}" title="Download now"><span class="fa fa-download"></span></a>
                             </td>
                             <td>{{$courseSchedule->publication_status==1? 'Published':'Unpublished'}}</td>
-                            <td>DEMO</td>
+                            <td>
+                                @if($courseSchedule->publication_status==1)
+                                <a href="{{route('unpublish_schedule_info',['id'=>$courseSchedule->id])}}" title="Unpublish it" class="btn btn-xs btn-warning"><span class="fa fa-arrow-up"></span></a>
+                                @else
+                                <a href="{{route('publish_schedule_info',['id'=>$courseSchedule->id])}}" title="Publish it" class="btn btn-xs btn-danger"><span class="fa fa-arrow-down"></span></a>
+                                @endif
+                                <a href="{{route('edit_schedule_info',['id'=>$courseSchedule->id])}}" title="Edit it" class="btn btn-xs btn-info"><span class="fa fa-edit"></span></a>
+                                <a href="{{route('delete_schedule_info',['id'=>$courseSchedule->id])}}" title="Delete it" class="btn btn-xs btn-danger"><span class="fa fa-trash"></span></a>
+                            </td>
                     </tbody>
                     @endforeach
                     </table>

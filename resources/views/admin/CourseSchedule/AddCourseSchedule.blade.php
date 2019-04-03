@@ -46,7 +46,7 @@ course schedule
                                     
                                     <div class="form-group">
                                         <label for="topic">Discussion topics</label>
-                                        <textarea id="topic" name="discussion_topic" class="form-control"  required></textarea>
+                                        <textarea id="editor" name="discussion_topic" class="form-control"  required></textarea>
                                         <span><b class="text-danger">{{$errors->has('discussion_topic')?$errors->first('discussion_topic'): ''}}</b></span>
                                     </div>
                                     

@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/app/Http/Controllers/CourseInfoController.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/resources/views/admin/CourseSchedule/ManageCourseSchedule.blade.php</file>
             <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/resources/views/admin/course/ManageCourseInfo.blade.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/resources/views/admin/about/manageAbout.blade.php</file>
             <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/routes/web.php</file>
-            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/resources/views/admin/course/EditCourseInfo.blade.php</file>
-            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/app/Http/Controllers/EditAboutMeController.php</file>
         </group>
     </open-files>
 </project-private>

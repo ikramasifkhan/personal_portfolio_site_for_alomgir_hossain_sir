@@ -266,6 +266,39 @@
                     </ul>
                 </li>
                 
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-book"></i>
+                        <span>My service</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="{{route('add-service')}}">Add my service</a></li>
+                        <li><a href="{{route('manage-service')}}">Manage service</a></li>
+                    </ul>
+                </li>
+                
+                
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-area-chart"></i>
+                        <span>My skill</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="{{route('add-skill')}}">Add my skill</a></li>
+                        <li><a href="{{route('manage-skill')}}">Manage skill</a></li>
+                    </ul>
+                </li>
+                
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-book"></i>
+                        <span>Educational background</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="{{route('add-education')}}">Add educational background</a></li>
+                        <li><a href="{{route('manage-education')}}">Manage educational background</a></li>
+                    </ul>
+                </li>
             </ul>            
         </div>
         <!-- sidebar menu end-->

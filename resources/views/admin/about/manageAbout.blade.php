@@ -32,7 +32,7 @@ about me
                             <th>{{$about->name}}</th>
                             <th>{{$about->title}}</th>
                             <th>{{$about->short_description}}</th>
-                            <th>{{$about->long_description}}</th>
+                            <th>{!! $about->long_description !!}</th>
                             <th>{{$about->date_of_birth}}</th>
                             <th>{{$about->birth_location}}</th>
                             <th>{{$about->languages}}</th>
@@ -48,7 +48,7 @@ about me
                                 @endif
                                 <a href="{{route('delete-about-info',['id'=>$about->id])}}" class="btn btn-danger btn-xs" title="Delete info"><span class="fa fa-trash"></span></a>
                                 
-                                <a href="{{route('edit-about-info',['id'=>$about->id])}}" class="btn btn-warning btn-xs" title="Edit info"><span class="fa fa-edit"></span></a>
+                                <a href="{{route('edit-about-info',['id'=>$about->id])}}" class="btn btn-info btn-xs" title="Edit info"><span class="fa fa-edit"></span></a>
                             </th>
                         </tbody>
                         @endforeach

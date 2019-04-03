@@ -39,7 +39,7 @@ about me
                                     
                                     <div class="form-group">
                                         <label for="long_description">Your long description</label>
-                                        <textarea id="short_description" name="long_description" class="form-control" placeholder="Long description" required>{!! $about->long_description !!}</textarea>
+                                        <textarea id="editor" name="long_description" class="form-control" placeholder="Long description" required>{!! $about->long_description !!}</textarea>
                                         <span><b class="text-danger">{{$errors->has('long_description')?$errors->first('long_description'): ''}}</b></span>
                                     </div>
                                     

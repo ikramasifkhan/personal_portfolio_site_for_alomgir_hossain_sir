@@ -18,6 +18,7 @@
     <script src="{{asset('/')}}admin/js/jquery2.0.3.min.js"></script>
     <script src="{{asset('/')}}admin/js/raphael-min.js"></script>
     <script src="{{asset('/')}}admin/js/morris.js"></script>
+    <script src="{{asset('/')}}admin/js/gmaps.min.js"></script>
     <script src="{{asset('/')}}admin/ckeditor/ckeditor.js"></script>
     <script src="{{asset('/')}}admin/ckeditor/samples/js/sample.js"></script>
     <link rel="stylesheet" href="{{asset('/')}}admin/ckeditor/samples/css/samples.css">

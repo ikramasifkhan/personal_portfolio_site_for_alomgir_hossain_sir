@@ -303,11 +303,33 @@
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-book"></i>
-                        <span>Workng  experience</span>
+                        <span>Working  experience</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="{{route('add-experience')}}">Add experince</a></li>
+                        <li><a href="{{route('add-experience')}}">Add experinece</a></li>
                         <li><a href="{{route('manage-experience')}}">Manage experience</a></li>
+                    </ul>
+                </li>
+                
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-globe"></i>
+                        <span>Contacts details</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="{{route('add-contact')}}">Add contact</a></li>
+                        <li><a href="{{route('manage-contact')}}">Manage contact</a></li>
+                    </ul>
+                </li>
+                
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-globe"></i>
+                        <span>Project</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="{{route('add-project')}}">Add project</a></li>
+                        <li><a href="{{route('manage-project')}}">Manage project</a></li>
                     </ul>
                 </li>
             </ul>            

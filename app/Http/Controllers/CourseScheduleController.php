@@ -18,7 +18,7 @@ class CourseScheduleController extends Controller {
 
     protected function validation($request) {
         $request->validate([
-            'schedule_date' => 'course_id',
+            'schedule_date' => 'required',
             'schedule_date' => 'required',
             'schedule_day' => 'required',
             'discussion_topic'=>'required',

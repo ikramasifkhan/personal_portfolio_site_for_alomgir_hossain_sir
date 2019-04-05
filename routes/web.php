@@ -324,3 +324,83 @@ Route::get('/experience/delete/{id}',[
     'uses'=>'ExperienceController@DeleteExperienceInfo',
     'as'=>'delete-experience-info'
 ]);
+
+Route::get('/contact-details/add',[
+    'uses'=>'ContactDetailsController@index',
+    'as'=>'add-contact'
+]);
+
+Route::post('/contact-details/save',[
+    'uses'=>'ContactDetailsController@SaveContactDetailsInfo',
+    'as'=>'save-contact-info'
+]);
+
+Route::get('/contact-details/manage',[
+    'uses'=>'ContactDetailsController@ManageContactInfo',
+    'as'=>'manage-contact'
+]);
+
+Route::get('/contact-details/unpublish/{id}',[
+    'uses'=>'ContactDetailsController@UnpublishContactInfo',
+    'as'=>'unpublish-contact-info'
+]);
+
+Route::get('/contact-details/publish/{id}',[
+    'uses'=>'ContactDetailsController@PublishContactInfo',
+    'as'=>'publish-contact-info'
+]);
+
+Route::get('/contact-details/edit/{id}',[
+    'uses'=>'ContactDetailsController@EditContactInfo',
+    'as'=>'edit-contact-info'
+]);
+
+Route::post('/contact-details/update',[
+    'uses'=>'ContactDetailsController@UpdateContactInfo',
+    'as'=>'update-contact-info'
+]);
+
+Route::get('/contact-details/delete/{id}',[
+    'uses'=>'ContactDetailsController@DeleteContactInfo',
+    'as'=>'delete-contact-info'
+]);
+
+Route::get('project/add',[
+    'uses'=>'ProjectController@index',
+    'as'=>'add-project'
+]);
+
+Route::post('project/save',[
+    'uses'=>'ProjectController@SaveProjectInfo',
+    'as'=>'save-project-info'
+]);
+
+Route::get('project/manage',[
+    'uses'=>'ProjectController@ManageProjectInfo',
+    'as'=>'manage-project'
+]);
+
+Route::get('project/unpublish/{id}',[
+    'uses'=>'ProjectController@UnpublishProjectInfo',
+    'as'=>'unpublish-project-info'
+]);
+
+Route::get('project/publish/{id}',[
+    'uses'=>'ProjectController@PublishProjectInfo',
+    'as'=>'publish-project-info'
+]);
+
+Route::get('project/edit/{id}',[
+    'uses'=>'ProjectController@EditProjectInfo',
+    'as'=>'edit-project-info'
+]);
+
+Route::post('project/update',[
+    'uses'=>'ProjectController@UpdateProjectInfo',
+    'as'=>'update-project-info'
+]);
+
+Route::get('project/delete/{id}',[
+    'uses'=>'ProjectController@DeleteProjectInfo',
+    'as'=>'delete-project-info'
+]);

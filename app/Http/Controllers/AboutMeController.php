@@ -18,7 +18,7 @@ class AboutMeController extends Controller {
             'short_description'=>'required',
             'long_description'=>'required',
             'date_of_birth'=>'required',
-            'short_description'=>'required',
+            'short_description'=>'required|max:400',
             'birth_location'=>'required',
             'languages'=>'required',
             'profile_pic'=>'required|image'

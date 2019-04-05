@@ -17,62 +17,28 @@ resume
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 pl-0"><h3 class="resume_heading">Education</h3></div>
         <div class="col-xl-10 col-lg-10 col-md-10 col-sm-0 pr-0">
             <div class="row resume_row">
+                @foreach($educations as $education)
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6  resume_content ">
-                    <p><b class="resume_year point">2013-2015</b></p>
-                    <p><b>Islampur Nekjahan Pilot Model High School</b></p>
-                    <p>Nunc porta dui a neque hendrerit imperdiet. Cras suscipit arcu risus, nec ultrices arcu fringilla at. Praesent facilisis, erat id placerat finibus, ex leo vehicula ipsum, sed dictum dui.</p>
+                    <p><b class="resume_year point">{{$education->starting_year}} - {{$education->finishing_year}}</b></p>
+                    <p><b>{{$education->institute_name}}</b></p>
+                    <p>{{$education->short_description}}</p>
                 </div>
-
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 resume_content ">
-                    <p><b class="resume_year point">2013-2015</b></p>
-                    <p><b>Islampur Nekjahan Pilot Model High School</b></p>
-                    <p>Nunc porta dui a neque hendrerit imperdiet. Cras suscipit arcu risus, nec ultrices arcu fringilla at. Praesent facilisis, erat id placerat finibus, ex leo vehicula ipsum, sed dictum dui.</p>
-                </div>
-
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 resume_content ">
-                    <p><b class="resume_year point">2013-2015</b></p>
-                    <p><b>Islampur Nekjahan Pilot Model High School</b></p>
-                    <p>Nunc porta dui a neque hendrerit imperdiet. Cras suscipit arcu risus, nec ultrices arcu fringilla at. Praesent facilisis, erat id placerat finibus, ex leo vehicula ipsum, sed dictum dui.</p>
-                </div>
-
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 resume_content ">
-                    <p><b class="resume_year point">2013-2015</b></p>
-                    <p><b>Islampur Nekjahan Pilot Model High School</b></p>
-                    <p>Nunc porta dui a neque hendrerit imperdiet. Cras suscipit arcu risus, nec ultrices arcu fringilla at. Praesent facilisis, erat id placerat finibus, ex leo vehicula ipsum, sed dictum dui.</p>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </div>
 
     <div class="row resume_experience">
-        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 pl-0"><h3 class="resume_heading">Education</h3></div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 pl-0"><h3 class="resume_heading">Experience</h3></div>
         <div class="col-xl-10 col-lg-10 col-md-10 col-sm-0 pr-0">
             <div class="row resume_row">
+                @foreach($experiences as $experience)
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 resume_content ">
-                    <p><b class="resume_year point">2013-2015</b></p>
-                    <p><b>Islampur Nekjahan Pilot Model High School</b></p>
-                    <p>Nunc porta dui a neque hendrerit imperdiet. Cras suscipit arcu risus, nec ultrices arcu fringilla at. Praesent facilisis, erat id placerat finibus, ex leo vehicula ipsum, sed dictum dui.</p>
+                    <p><b class="resume_year point">{{$experience->starting_year}} - {{$experience->finishing_year}}</b></p>
+                    <p><b>{{$experience->institute_name}}</b></p>
+                    <p>{{$experience->short_description}}</p>
                 </div>
-
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 resume_content ">
-                    <p><b class="resume_year point">2013-2015</b></p>
-                    <p><b>Islampur Nekjahan Pilot Model High School</b></p>
-                    <p>Nunc porta dui a neque hendrerit imperdiet. Cras suscipit arcu risus, nec ultrices arcu fringilla at. Praesent facilisis, erat id placerat finibus, ex leo vehicula ipsum, sed dictum dui.</p>
-                </div>
-
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 resume_content ">
-                    <p><b class="resume_year point">2013-2015</b></p>
-                    <p><b>Islampur Nekjahan Pilot Model High School</b></p>
-                    <p>Nunc porta dui a neque hendrerit imperdiet. Cras suscipit arcu risus, nec ultrices arcu fringilla at. Praesent facilisis, erat id placerat finibus, ex leo vehicula ipsum, sed dictum dui.</p>
-                </div>
-
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 resume_content ">
-                    <p><b class="resume_year point">2013-2015</b></p>
-                    <p><b>Islampur Nekjahan Pilot Model High School</b></p>
-                    <p>Nunc porta dui a neque hendrerit imperdiet. Cras suscipit arcu risus, nec ultrices arcu fringilla at. Praesent facilisis, erat id placerat finibus, ex leo vehicula ipsum, sed dictum dui.</p>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </div>

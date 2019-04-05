@@ -22,7 +22,7 @@ class CourseInfoController extends Controller {
             'consult_hour' => 'required',
             'book_name' => 'required',
             'course_objective' => 'required',
-            'short_description' => 'required',
+            'short_description' => 'required|max:200',
             'long_description' => 'required',
             'first_term' => 'required|numeric|min:1|max:100',
             'mid_term' => 'required|numeric|min:1|max:100',

@@ -14,7 +14,7 @@ class SeriviceController extends Controller
     protected function ServiceFormValidation($request) {
         $request->validate([
             'service_name' => 'required|max:255',
-            'service_description' => 'required',
+            'service_description' => 'required|max:300',
             'publication_status' => 'required',
         ]);
     }

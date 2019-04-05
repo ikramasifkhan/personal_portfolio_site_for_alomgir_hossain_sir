@@ -12,7 +12,7 @@ about me
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Add about me info
+                            Add about me info <span class="text-success">{{Session::get('message')}}</span>
                         </header>
                         <div class="panel-body">
                             <div class="position-center">

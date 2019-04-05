@@ -17,6 +17,7 @@ coursed
                 <div class="table-responsive">
                     <table class="table table-striped b-t b-light table-bordered">
                         <thead>
+                            <th>Page number</th>
                             <th>Name of the course</th>
                             <th>Course objective</th>
                             <th>Course short description</th>
@@ -26,6 +27,7 @@ coursed
                         </thead>
                         @foreach($courses as $course)
                         <tbody>
+                            <td>{{$course->page_number}}</td>
                             <td>{{$course->name}}</td>
                             <td>{{$course->course_objective}}</td>
                             <td>{{$course->short_description}}</td>

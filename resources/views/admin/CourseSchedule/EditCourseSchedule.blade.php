@@ -31,9 +31,16 @@ course schedule
                                      </div>
                                     
                                     <div class="form-group">
+                                        <label for="date">Page number</label>
+                                        <input type="text" class="form-control" id="date" placeholder="Page number" name="page_number" required value="{{$CourseSchedule->page_number}}">
+                                        <input type="text" class="form-control" id="date" placeholder="Select a date" name="schedule_id" required value="{{$CourseSchedule->id}}">
+                                        <span><b class="text-danger">{{$errors->has('page_number')?$errors->first('page_number'): ''}}</b></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
                                         <label for="date">Date</label>
                                         <input type="date" class="form-control" id="date" placeholder="Select a date" name="schedule_date" required value="{{$CourseSchedule->schedule_date}}">
-                                        <input type="hidden" class="form-control" id="date" placeholder="Select a date" name="schedule_id" required value="{{$CourseSchedule->id}}">
+                                        
                                         <span><b class="text-danger">{{$errors->has('schedule_date')?$errors->first('schedule_date'): ''}}</b></span>
                                     </div>
                                     
@@ -47,7 +54,9 @@ course schedule
                                     
                                     <div class="form-group">
                                         <label for="topic">Discussion topics</label>
-                                        <textarea id="topic" name="discussion_topic" class="form-control"  required>{{$CourseSchedule->discussion_topic}}</textarea>
+                                        <textarea id="topic" name="discussion_topic" class="form-control"  required>
+                                            {!! $CourseSchedule->discussion_topic !!}
+                                        </textarea>
                                         <span><b class="text-danger">{{$errors->has('discussion_topic')?$errors->first('discussion_topic'): ''}}</b></span>
                                     </div>
                                     
@@ -61,7 +70,7 @@ course schedule
                                         <label for="exampleInputFile">Additional file</label><br>
                                         <span><b class="text-danger">{{$CourseSchedule->file_name}}</b></span>
                                         
-                                        <span><b class="text-danger">{{$CourseSchedule->lecture_file}}</b></span>
+                                        <span><b class="text-danger" hidden>{{$CourseSchedule->lecture_file}}</b></span>
                                         
                                         <input type="file" id="exampleInputFile" name="lecture_file">
                                         <span><b class="text-danger">{{$errors->has('lecture_file')?$errors->first('lecture_file'): ''}}</b></span>

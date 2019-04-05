@@ -16,6 +16,7 @@ about me
                 <div class="table-responsive">
                     <table class="table table-striped b-t b-light table-bordered">
                         <thead>
+                            <th>Page number</th>
                             <th>Course name</th>
                             <th>Date</th>
                             <th>Day</th>
@@ -26,6 +27,7 @@ about me
                         </thead>
                         @foreach($courseSchedules as $courseSchedule)
                         <tbody>
+                            <td>{{$courseSchedule->page_number}}</td>
                             <td>{{$courseSchedule->name}}</td>
                             <td>{{$courseSchedule->schedule_date}}</td>
                             <td>{{$courseSchedule->schedule_day}}</td>

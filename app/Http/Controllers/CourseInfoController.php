@@ -14,6 +14,7 @@ class CourseInfoController extends Controller {
 
     protected function validation($request) {
         $request->validate([
+            'page_number'=>'required|max:3',
             'name' => 'required',
             'code' => 'required',
             'credit_hours' => 'required|numeric',
@@ -46,6 +47,7 @@ class CourseInfoController extends Controller {
 
         $courses = new Course();
 
+        $courses->page_number = $request->page_number;
         $courses->name = $request->name;
         $courses->code = $request->code;
         $courses->credit_hours = $request->credit_hours;
@@ -121,6 +123,7 @@ class CourseInfoController extends Controller {
     }
     
     protected function CourseBasicInfo($request, $course, $ImageUrl=null){
+        $course->page_number = $request->page_number;
         $course->name = $request->name;
         $course->code = $request->code;
         $course->credit_hours = $request->credit_hours;

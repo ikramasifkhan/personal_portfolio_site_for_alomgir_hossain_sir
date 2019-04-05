@@ -31,6 +31,12 @@ course schedule
                                      </div>
                                     
                                     <div class="form-group">
+                                        <label for="date">Page number</label>
+                                        <input type="text" class="form-control" id="date" placeholder="Page number" name="page_number" required>
+                                        <span><b class="text-danger">{{$errors->has('page_number')?$errors->first('page_number'): ''}}</b></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
                                         <label for="date">Date</label>
                                         <input type="date" class="form-control" id="date" placeholder="Select a date" name="schedule_date" required>
                                         <span><b class="text-danger">{{$errors->has('schedule_date')?$errors->first('schedule_date'): ''}}</b></span>

@@ -13,13 +13,18 @@ Course
                     <section class="panel">
                         <header class="panel-heading">
                             Add course info
-                            <p>{{Session::get('message')}}</p>
+                            <span class="text-success">{{Session::get('message')}}</span>
                         </header>
                         <div class="panel-body">
                             <div class="position-center">
                                 <form role="form" method="post" action="{{route('save-course-info')}}" enctype="multipart/form-data">
                                     @csrf
                                      <div class="form-group">
+                                        <label for="name">Page number </label>
+                                        <input type="text" class="form-control" id="name" placeholder="Page number" name="page_number" required>
+                                        <span><b class="text-danger">{{$errors->has('page_number')?$errors->first('page_number') :''}}</b></span>
+                                     </div>
+                                    <div>
                                         <label for="name">course name</label>
                                         <input type="text" class="form-control" id="name" placeholder="Course name" name="name" required>
                                         <span><b class="text-danger">{{$errors->has('name')?$errors->first('name') :''}}</b></span>

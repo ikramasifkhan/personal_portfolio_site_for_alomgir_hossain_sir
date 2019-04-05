@@ -18,6 +18,7 @@ class CourseScheduleController extends Controller {
 
     protected function validation($request) {
         $request->validate([
+            'page_number' => 'required|max:7',
             'schedule_date' => 'required',
             'schedule_date' => 'required',
             'schedule_day' => 'required',
@@ -38,6 +39,7 @@ class CourseScheduleController extends Controller {
     }
 
     protected function CourseScheduleBasicInfo($request, $courseSchedule, $ImageUrl = null) {
+        $courseSchedule->page_number = $request->page_number;
         $courseSchedule->course_id = $request->course_id;
         $courseSchedule->schedule_date = $request->schedule_date;
         $courseSchedule->schedule_day = $request->schedule_day;
@@ -113,6 +115,7 @@ class CourseScheduleController extends Controller {
         }
         return redirect('course/schedule/manage')->with('message', 'Update info save successful');
     }
+    
     public function DeleteCourseScheduleInfo($id){
         $CourseSchedule= CourseSchedule::find($id);
         $CourseSchedule->delete();

@@ -18,12 +18,18 @@ course
                             <div class="position-center">
                                 <form role="form" method="post" action="{{route('update-course-info')}}" enctype="multipart/form-data">
                                     @csrf
-                                     <div class="form-group">
-                                        <label for="name">course name</label>
+                                    <div class="form-group">
+                                        <label for="name">Page number</label>
+                                        <input type="text" class="form-control" id="page_number" placeholder="Page number" name="page_number" required value="{{$course->page_number}}">
+                                        <span><b class="text-danger">{{$errors->has('page_number')?$errors->first('page_number') :''}}</b></span>
+                                    </div>
+                                    
+                                    <div>
+                                            <label for="name">course name</label>
                                         <input type="text" class="form-control" id="name" placeholder="Course name" name="name" required value="{{$course->name}}">
-                                        <input type="text" class="form-control" id="name" placeholder="Course name" name="course_id" required value="{{$course->id}}">
-                                        <span><b class="text-danger">{{$errors->has('name')?$errors->first('name') :''}}</b></span>
-                                     </div>
+                                        <input type="hidden" class="form-control" id="name" placeholder="Course name" name="course_id" required value="{{$course->id}}">
+                                            <span><b class="text-danger">{{$errors->has('name')?$errors->first('name') :''}}</b></span>
+                                        </div>
                                     
                                     <div class="form-group">
                                         <label for="code">Course code</label>

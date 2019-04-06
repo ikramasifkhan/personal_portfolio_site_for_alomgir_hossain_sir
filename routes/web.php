@@ -30,12 +30,12 @@ Route::get('/contact',[
     'as'=>'contact-info'
 ]);
 
-Route::get('/courses',[
+Route::get('/courses/{id}',[
     'uses'=>'CourseController@index',
     'as'=>'course-info'
 ]);
 
-Route::get('/course/schedule',[
+Route::get('/course/schedule/{id}',[
     'uses'=>'CourseController@CourseSchedule',
     'as'=>'course-schedule'
 ]);
@@ -125,42 +125,42 @@ Route::post('/course/update',[
     'as'=>'update-course-info'
 ]);
 
-Route::get('/course/schedule/add',[
+Route::get('/course-schedule/add',[
     'uses'=>'CourseScheduleController@index',
     'as'=>'add-course-schedule-info'
 ]);
 
-Route::post('/course/schedule/save',[
+Route::post('/course-schedule/save',[
     'uses'=>'CourseScheduleController@SaveCourseSchedule',
     'as'=>'save-course-schedule'
 ]);
 
-Route::get('/course/schedule/manage',[
+Route::get('/course-schedule/manage',[
     'uses'=>'CourseScheduleController@ManageCourseScheduleInfo',
     'as'=>'manage-course-schedule-info'
 ]);
 
-Route::get('/course/schedule/unpublish/{id}',[
+Route::get('/course-schedule/unpublish/{id}',[
     'uses'=>'CourseScheduleController@UnpublishCourseScheduleInfo',
     'as'=>'unpublish_schedule_info'
 ]);
 
-Route::get('/course/schedule/publish/{id}',[
+Route::get('/course-schedule/publish/{id}',[
     'uses'=>'CourseScheduleController@PublishCourseScheduleInfo',
     'as'=>'publish_schedule_info'
 ]);
 
-Route::get('/course/schedule/edit/{id}',[
+Route::get('/course-schedule/edit/{id}',[
     'uses'=>'CourseScheduleController@EditCourseScheduleInfo',
     'as'=>'edit_schedule_info'
 ]);
 
-Route::post('/course/schedule/update/',[
+Route::post('/course-schedule/update/',[
     'uses'=>'CourseScheduleController@UpdateCourseScheduleInfo',
     'as'=>'upadate-course-schedule'
 ]);
 
-Route::get('/course/schedule/delete/{id}',[
+Route::get('/course-schedule/delete/{id}',[
     'uses'=>'CourseScheduleController@DeleteCourseScheduleInfo',
     'as'=>'delete_schedule_info'
 ]);

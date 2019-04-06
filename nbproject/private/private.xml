@@ -3,11 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/app/Http/Controllers/EducationController.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/app/Http/Controllers/SeriviceController.php</file>
             <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/app/Http/Controllers/CourseInfoController.php</file>
-            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/resources/views/admin/course/ManageCourseInfo.blade.php</file>
-            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/resources/views/admin/course/AddCourse.blade.php</file>
-            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/resources/views/admin/course/EditCourseInfo.blade.php</file>
-            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/database/migrations/2019_03_31_104527_create_courses_table.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/resources/views/front-end/resume/resume.blade.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/routes/web.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/app/Http/Controllers/AboutController.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/resources/views/front-end/about/about.blade.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/app/Http/Controllers/AlomgirHossaingController.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/resources/views/front-end/home/home.blade.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/app/Http/Controllers/ExperienceController.php</file>
+            <file>file:/D:/xampp/htdocs/PersonalSiteAlomgirHossain/app/Http/Controllers/AboutMeController.php</file>
         </group>
     </open-files>
 </project-private>

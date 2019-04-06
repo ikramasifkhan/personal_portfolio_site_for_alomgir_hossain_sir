@@ -20,18 +20,14 @@ course schedule
                             <th>Topic will be covered</th>
                             <th>Additional file</th>
                         </tr>
+                        @foreach($courseSchedules as $courseSchedule)
                         <tr>
-                            <td>January 20 2019</td>
-                            <td>Saturday</td>
-                            <td><p>Sed lectus est, sollicitudin at consectetur non, fringilla at dolor. In hac habitasse platea dictumst.Proin et euismod iSed lectus est, sollicitudin at consectetur non, fringilla at dolor. In hac habitasse platea dictumst.Proin et euismod i</p></td>
-                            <td>Demo file</td>
+                            <td>{{$courseSchedule->schedule_date}}</td>
+                            <td>{{$courseSchedule->schedule_day}}</td>
+                            <td><p>{!! $courseSchedule->discussion_topic !!}</p></td>
+                            <td><a style="color:#fd4d4d; font-family: 'Open Sans', sans-serif; text-decoration: none" href="{{url('/course/schedule/')}}" download="{{$courseSchedule->lecture_file}}">{{$courseSchedule->file_name}} <span class="fa fa-download" title="Download now"></span></a></td>
                         </tr>
-                        <tr>
-                            <td>January 20 2019</td>
-                            <td>Saturday</td>
-                            <td>Sed lectus est, sollicitudin at consectetur non, fringilla at dolor. In hac habitasse platea dictumst.Proin et euismod i</td>
-                            <td>Demo file</td>
-                        </tr>
+                        @endforeach
                     </table>
                 </div>
             </div>

@@ -36,7 +36,8 @@ Home
                             <p class="card-text">{{$course->short_description}}</p>
                         </div>
                         <div class="card-footer">
-                            <a href="{{route('course-info')}}" class="btn btn-danger my_button">View  details</a>
+                            <a href="{{route('course-info',['id'=>$course->id])}}" class="btn btn-danger my_button">View  details</a>
+                            <a href="{{route('course-schedule',['id'=>$course->id])}}" class="btn btn-danger my_button float-right">View  schedule</a>
                         </div>
                     </div>
                 </div>

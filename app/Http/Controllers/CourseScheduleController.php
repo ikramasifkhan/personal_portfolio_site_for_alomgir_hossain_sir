@@ -60,7 +60,7 @@ class CourseScheduleController extends Controller {
 
         $this->CourseScheduleBasicInfo($request, $courseSchedule, $ImageUrl);
 
-        return redirect('course/schedule/add')->with('message', 'Info saved successfully');
+        return redirect('course-schedule/add')->with('message', 'Info saved successfully');
     }
 
     public function ManageCourseScheduleInfo() {
@@ -68,7 +68,6 @@ class CourseScheduleController extends Controller {
                 ->join('courses', 'course_schedules.course_id', '=', 'courses.id')
                 ->select('course_schedules.*', 'courses.name')
                 ->get();
-
         return view('admin.CourseSchedule.ManageCourseSchedule', [
             'courseSchedules' => $courseSchedules
         ]);
@@ -79,7 +78,7 @@ class CourseScheduleController extends Controller {
         $CourseSchedule->publication_status = 0;
         $CourseSchedule->save();
 
-        return redirect('course/schedule/manage')->with('message', 'Unpublished successful');
+        return redirect('course-schedule/manage')->with('message', 'Unpublished successful');
     }
 
     public function PublishCourseScheduleInfo($id) {
@@ -87,7 +86,7 @@ class CourseScheduleController extends Controller {
         $CourseSchedule->publication_status = 1;
         $CourseSchedule->save();
 
-        return redirect('course/schedule/manage')->with('message', 'Published successful');
+        return redirect('course-schedule/manage')->with('message', 'Published successful');
     }
 
     public function EditCourseScheduleInfo($id) {
@@ -113,12 +112,12 @@ class CourseScheduleController extends Controller {
         } else {
             $this->CourseScheduleBasicInfo($request, $courseSchedule);
         }
-        return redirect('course/schedule/manage')->with('message', 'Update info save successful');
+        return redirect('course-schedule/manage')->with('message', 'Update info save successful');
     }
     
     public function DeleteCourseScheduleInfo($id){
         $CourseSchedule= CourseSchedule::find($id);
         $CourseSchedule->delete();
-         return redirect('course/schedule/manage')->with('message', 'Delete info  successfully');
+         return redirect('course-schedule/manage')->with('message', 'Delete info  successfully');
     }
 }

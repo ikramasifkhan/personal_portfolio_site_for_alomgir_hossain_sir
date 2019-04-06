@@ -13,4 +13,12 @@ class RecentWorkController extends Controller
             'projects'=>$projects
         ]);
     }
+    
+    public function ProjectDetails($id) {
+        $project = Project::find($id);
+        return view('front-end.work.ProjectDetails', [
+                'project'=>$project          
+        ]);
+    }
+
 }

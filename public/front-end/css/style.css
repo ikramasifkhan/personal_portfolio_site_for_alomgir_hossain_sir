@@ -587,6 +587,29 @@ h1,h2,h3,h4,h5,h6,p{
 }
 /*=====================course schedule page ends  here===============================*/
 
+/*========================project_detail page start here===========================*/
+.project_details{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.project_details .project_page_content{
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+}
+.project_details .project_page_content .project_page_content_title{
+}
+.project_details .project_page_content .project_page_content_title b{
+    color: #090424;
+    font-weight: 700;
+   font-family: 'Open Sans', sans-serif;
+}
+.project_details .project_page_content .project_page_content_text{
+    color: #090424;
+    font-weight: 400;
+   font-family: 'Open Sans', sans-serif;
+}
+/*========================project_detail page ends here===========================*/
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}

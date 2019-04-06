@@ -25,7 +25,7 @@ recent work
                             <p class="card-text">{{$project->short_description}}</p>
                         </div>
                         <div class="card-footer">
-                            <a href="course_details.html" class="btn btn-danger my_button">View  details</a>
+                            <a href="{{route('project-details',['id'=>$project->id])}}" class="btn btn-danger my_button">View  details</a>
                         </div>
                     </div>
                 </div>

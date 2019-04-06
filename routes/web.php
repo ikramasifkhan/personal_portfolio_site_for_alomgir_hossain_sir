@@ -25,6 +25,11 @@ Route::get('/recent/work',[
     'as'=>'recent-work'
 ]);
 
+Route::get('/project/details/{id}',[
+    'uses'=>'RecentWorkController@ProjectDetails',
+    'as'=>'project-details'
+]);
+
 Route::get('/contact',[
     'uses'=>'ContactMeController@index',
     'as'=>'contact-info'
